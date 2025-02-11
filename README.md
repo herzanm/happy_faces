@@ -19,9 +19,11 @@ Tyto hodnoty jsou využívány pro správné sestavení obrázku pomocí algorit
 
 Program se skládá ze tří hlavních souborů:
 
-- `Smajlici.hpp` – deklarace tříd a funkcí pro manipulaci se smajlíky.
-- `Smajlici.cpp` – implementace logiky skládání a otáčení čtverečků.
-- `main.cpp` – hlavní soubor programu, který načítá vstupní obrázek, provádí analýzu a skládá správný výstup.
+include/Smajlici.hpp – deklarace tříd a funkcí pro manipulaci se smajlíky.
+
+src/Smajlici.cpp – implementace logiky skládání a otáčení čtverečků.
+
+src/main.cpp – hlavní soubor programu, který načítá vstupní obrázek, provádí analýzu a skládá správný výstup.
 
 ## Zadání
 ![smajlici](https://github.com/user-attachments/assets/a074ffba-cecb-49d7-b24c-72c9220a1f94)
@@ -35,11 +37,11 @@ Program se skládá ze tří hlavních souborů:
    ```
 2. Přesuňte se do složky projektu:
    ```sh
-   cd happy_faces
+   cd ../happy_faces
    ```
 3. Zkompilujte zdrojový kód:
    ```sh
-   g++ -o happy_faces main.cpp Smajlici.cpp
+   g++ -I include -o happy_faces src/main.cpp src/Smajlici.cpp
    ```
 4. Spusťte program:
    ```sh
