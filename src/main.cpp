@@ -281,11 +281,30 @@ int main()
 {
     // Inicializace objektů
     // Smajlící jsou  přepsány pomocí int - Popsáno v komentáři na začátku souboru
+    /*
+    
+- Prepsat matice do objektu tridy a prevest smiley face a barvy na int, kde:
+    Zelená:
+        oči -> 1
+        ústa -> 2
+    Červená:
+        oči -> 3
+        ústa -> 4
+    Modrá:
+        oči -> 5
+        ústa -> 6
+    Žlutá:
+        oči -> 7
+        ústa -> 8
+
+- Hledat možné kombinace směrem -> a vytvořit kombinace řádků
+- Najít všechny možné kombinace řádků
+*/
     std::vector<Square> squares = {
         {1, 4, 8, 3, 1},
         {2, 5, 7, 6, 2},
         {3, 3, 7, 6, 8},
-        {4, 4, 5, 2, 4},
+        {4, 4, 5, 1, 4},
         {5, 5, 1, 4, 8},
         {6, 6, 8, 3, 1},
         {7, 6, 2, 7, 5},
